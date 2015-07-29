@@ -1,10 +1,10 @@
-<!-- print the person's name and birthdate here -->
 <h1>People</h1>
 <table>
   <thead>
     <th>Name</th>
     <th>Birthdate</th>
-    <th>Delete</th>    
+    <th>Edit</th>
+    <th>Delete</th>
   </thead>
   <tbody>
     <% @people.each do |person| %>
@@ -17,7 +17,10 @@
         <td>
           <%= "#{person.birthdate}" %>
         </td>
-        <td> 
+        <td>
+          <a href="<%= "/people/#{person.id}/edit" %>"> Edit
+        </td>
+        <td>
           <form action="<%= "/people/#{person.id}" %>" method="post">
             <input type="hidden" name="_method" value="delete" />
             <input type="submit" value="Delete" />
