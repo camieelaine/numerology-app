@@ -11,7 +11,7 @@ body {
 
 .edit-person {
 	padding: 20px;  
-	background-color: #add8e6;
+	background-color: #efefef;
 }
 
 .errors {
@@ -76,4 +76,50 @@ and finally, we serve for every view-port the right image:
     .responsive-image{
         background-image: url('../img/mobile-ld.jpg');
     }
+}
+
+body {
+  background:#f8f8f8;
+  background:url('img/background.png');
+  font-family:'montserrat', arial;
+}
+
+h1 {
+  color: #fd395e;
+  font-family:'montserrat', arial;
+  font-weight: bold;
+}
+
+label {
+
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+button {
+  color: #fd395e;
+  font-family:'montserrat', arial;
+  font-weight: normal;
+}
+
+input[type="submit"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+    background-color: #fd395e;
+}
+.button { /* .homepage-container #mc-embedded-subscribe 16px */
+    background: #F16059;
+    height: 4.1875em; 
+    margin: 0;
+    width: 203px;
+    padding: 15px 5%;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    outline: none
 }
