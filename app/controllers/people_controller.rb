@@ -16,7 +16,7 @@ post '/people' do
     birthdate = Date.strptime(params[:birthdate], "%m%d%Y")
   end
   
-  person = Person.create(first_name: params[:first_name], last_name: params[:last_name], birthdate: birthdate)
+  @person = Person.create(first_name: params[:first_name], last_name: params[:last_name], birthdate: birthdate)
   if @person.valid?
     @person.save
     redirect "/people/#{@person.id}"
