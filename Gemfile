@@ -4,7 +4,7 @@ gem 'activerecord'
 gem 'pg'
 
 gem 'rspec'
-
+gem 'puma'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'rake'
